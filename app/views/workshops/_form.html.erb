@@ -1,0 +1,22 @@
+<%= simple_form_for(@workshop) do |f| %>
+   <%= f.error_notification %>
+      <div class="field">
+         <div class="control">
+            <%= f.input :name , label: "Workshop name" , input_html: { class: "textarea"},
+                wrapper: false, label_html: {class: "label"}, autofocus:true %>
+          </div>
+          <div class="control">
+            <%= f.input :description , label: "Post your secrets" , input_html: { class: "textarea"},
+                wrapper: false, label_html: {class: "label"},placeholder: "Workshop description here..." ,autofocus:true %>
+          </div>
+          <div class="control">
+            <%= f.input :start_date , label: "Workshop start date" , input_html: { class: "textarea"},
+                wrapper: false, label_html: {class: "label"},placeholder: "Your secret here..." ,autofocus:true %>
+          </div>
+          <div class="control">
+            <%= f.input :end_date , label: "Workshop end date" , input_html: { class: "textarea"},
+                wrapper: false, label_html: {class: "label"},placeholder: "Your secret here..." ,autofocus:true %>
+          </div>
+        </div>
+    <%= f.button :submit,class: "button is-info" %>
+<% end %>

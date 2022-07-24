@@ -1,0 +1,23 @@
+<div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom"><%= section_title %></h2>
+    <div class="row my-4 mx-4 p-2">
+        <% workshops.each do |workshop| %>
+            <div class="col-lg-6">
+                <div class="card shadow mb-3 mt-2">
+                    <div class="card-body">
+                        <h3 class="card-title"><%= workshop.name %></h3>
+                        <p class="lead"><%= workshop.description %></p>
+                        <h4>Duration : <span class="badge bg-secondary"><%= workshop.total_duration %>
+                        </span></h4>
+                        <%= link_to "View Details", workshop, class:"btn btn-warning  btn-md mx-auto" %>
+                    </div>
+                </div>
+            </div>
+
+        <% end %>
+    </div>
+</div>
+
+
+
+

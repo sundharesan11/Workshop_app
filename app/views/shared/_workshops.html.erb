@@ -7,9 +7,14 @@
                     <div class="card-body">
                         <h3 class="card-title"><%= workshop.name %></h3>
                         <p class="lead"><%= workshop.description %></p>
+                        <% if user_signed_in? %>
                         <h4>Duration : <span class="badge bg-secondary"><%= workshop.total_duration %>
                         </span></h4>
                         <%= link_to "View Details", workshop, class:"btn btn-warning  btn-md mx-auto" %>
+                        <% else %>
+                        <span class="badge bg-warning fs-4">Login to View Details
+                        </span>
+                        <% end %>
                     </div>
                 </div>
             </div>

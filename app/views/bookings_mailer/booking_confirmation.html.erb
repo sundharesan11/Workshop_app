@@ -3,7 +3,7 @@
     <div class="card-header">
       <h1 class="card-title">Workshop Booking Confirmation!!!</h1>
     </div>
-    <div class="card-body">
+    <div class="card-body mx-auto bg-success">
       <h2>
         Greetings!!!
       </h2>
@@ -12,16 +12,16 @@
         Your booking for the <strong><%= @workshop.name %> </strong> has been confirmed.Please find the booking details below!
       </p>
       
-      <div class="card-body">
+      <div class="card-body mx-auto">
         <div class="col-md-6">
-          <div class="h-100 p-5 text-white bg-warning rounded-3">
-            <h3 class="mt-2 mb-4">Booking Details:</h3>
+          <div class="h-100 p-5 text-dark bg-warning rounded-3">
+            <h3 class="mb-3">Booking Details:</h3>
             <p><strong>Number of tickets:</strong><%= @booking.no_of_tickets %></p>
-            <p><strong>Number of tickets:</strong><%= @booking.amount_paid %></p>
+            <p><strong>Amout for tickets:</strong><%= @booking.amount_paid %></p>
             <br>
             <h4 class="mb-4">Workshop Schedule:</h4>
-            <h6>Total duration:<span class="badge bg-info"><%= @workshop.total_duration %></span></h6>
-            <h6>Daily workshop hours:<span class="badge bg-info"><%= @workshop.daily_duration %></span></h6>
+            <h6>Total duration:<span class="badge bg-secondary"><%= @workshop.total_duration %></span></h6>
+            <h6>Daily workshop hours:<span class="badge bg-secondary"><%= @workshop.daily_duration %></span></h6>
           </div>
         </div>
       </div>

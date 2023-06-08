@@ -1,24 +1,6 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Developed full-stack Ruby on Rails web app for workshop ticket bookings.
+Integrated Stripe API for secure payment transactions.
+Implemented workshop listings, user registration, and authentication.
+Streamlined booking process with cost calculation.
+Created user dashboard for managing bookings and payments.
+Enhanced user experience with intuitive interface.
